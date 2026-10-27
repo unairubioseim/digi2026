@@ -17,21 +17,29 @@
         color:white;
         align-content: center;
     }
-    .vercompetis{
-        background-color:lightblue;
-        border:2px blue solid;
-        padding:10px;
+    .asignaturas{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap:30px;
+        text-align:center;
+        margin: 30px;
     }
-    .instertcompetis{
-        background-color:lightsalmon;
-        border:2px salmon solid;
-        padding:10px;
+    .contenido{
+        font-size:30px;
+        background-color:gray;
+        height: 250px;
+        align-content: center;
+        border:1px solid black;
+        border-radius:40px;
     }
-
-    .estilos{
-        background-color:lightgreen;
-        border:2px green solid;
-        padding:10px;
+    .asigs a{
+        color:black;
+        text-decoration:none;
+    }
+    .asigs a:hover {
+        color:white;
+        font-size: 50px;
     }
 
 </style>
@@ -42,40 +50,15 @@
 </div>
 
 
-<nav>
+<div class="asignaturas">
 
-<div class="vercompetis">
-    <h2>Ver competiciones y resultados:</h2>
+    <div class="asigs"> <a href="/Competiciones/Ver_competiciones.html"><div class="contenido">Ver Competiciones</div></a></div>
+    <div class="asigs"> <a href="/Competiciones/Ver_resultados.html"><div class="contenido">Ver resultados</div></a></div>
 
-        <ul> <!-- <ol> para listas ordenadas-->
+    <div class="asigs"> <a href="/crear/Nueva_competicion.html"><div class="contenido">Nuevas competiciones</div></a></div>
+    <div class="asigs"> <a href="/crear/Nuevo_resultado.html"><div class="contenido">Nuevo resultado</div></a></div>
 
-            <li><a href="/Competiciones/Ver_competiciones.html">Ver competiciones</a> </li>
-            <li><a href="/Competiciones/Ver_resultados.html">Ver resultados</a> </li>
-
-        </ul>
 </div>
 
-
-<div class="instertcompetis">
-    <h2>Insertar competiciones y resultados:</h2>
-
-    <ul>
-
-        <li><a href="/crear/Nueva_competicion.html">Nuevas competiciones</a> </li>
-        <li><a href="/crear/Nuevo_resultado.html">Nuevo resultados</a> </li>
-
-    </ul>
-</div>
-
-
-<div class="estilos">
-    <h2>Estilos y CSS:</h2>
-    <ul>
-        <li><a href="css5">Ejemplo estilos 1</a></li>
-        <li><a href="css6">Ejemplo estilos 2</a></li>
-
-    </ul>
-</div>
-</nav>
 </body>
 </html>
